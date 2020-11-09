@@ -35,3 +35,33 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/individuals')
+def individuals():
+    """Renders the about page."""
+    return render_template(
+        'individuals.html',
+        title='Individuals',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
+
+@app.route('/businesses')
+def businesses():
+    """Renders the about page."""
+    return render_template(
+        'businesses.html',
+        title='Businesses',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
+
+@app.route('/marketplace')
+def marketplace():
+    """Renders the about page."""
+    return render_template(
+        'marketplace.html',
+        title='marketplace',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
