@@ -35,3 +35,12 @@ def about():
         year=datetime.now().year,
         message='Your application description page.'
     )
+@app.route('/Individual')
+def Individual():
+    """Renders the contact page."""
+    return render_template(
+        'Individual.html',
+        title='Individual',
+        year=datetime.now().year,
+        message='Your Individual page.'
+    )
