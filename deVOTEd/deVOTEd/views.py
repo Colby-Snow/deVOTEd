@@ -18,6 +18,17 @@ def home():
         year=datetime.now().year,
     )
 
+@app.route('/business')
+def business():
+    """Renders the contact page."""
+    return render_template(
+        'business.html',
+        title='Business',
+        year=datetime.now().year,
+        message='Your business page.'
+    )
+
+
 @app.route('/contact')
 def contact():
     """Renders the contact page."""
