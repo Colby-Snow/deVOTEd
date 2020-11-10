@@ -16,18 +16,18 @@
         <br>
         <form action="" method="post">
             <input type="text" placeholder="Username" name="username" value="{{
-          request.form.username }}">
-            <input type="text" placeholder="Email" name="email" value="{{
-          request.form.email }}">
+          request.form.username }}" required>
+            <input type="email" placeholder="Email" name="email" value="{{
+          request.form.email }}" required>
             <input type="password" placeholder="Password" name="password" value="{{
-          request.form.password }}">
+          request.form.password }}"required>
             <input type="password" placeholder="Confirm Password" name="conPassword" value="{{
-          request.form.conPassword }}">
-            <select type="select" id="contact" name="contact">
-                <option value="Business">Email</option>
-                <option value="Personal">Phone</option>
+          request.form.conPassword }}"required>
+            <select type="select" id="business" name="business" required>
+                <option value="Business">Business</option>
+                <option value="Individual">Individual</option>
             </select>
-            <input class="btn btn-default" type="submit" value="Login">
+            <input class="btn btn-default" type="submit" value="Register">
         </form>
         {% if error %}
         <p class="error">

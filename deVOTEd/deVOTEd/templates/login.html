@@ -16,10 +16,10 @@
         <br>
         <form action="" method="post">
             <input type="text" placeholder="Username" name="username" value="{{
-          request.form.username }}">
+          request.form.username }}" required>
             <input type="password" placeholder="Password" name="password" value="{{
-          request.form.password }}">
-            <select id="business" name="business">
+          request.form.password }}" required>
+            <select id="business" name="business" required>
                 <option value="Business">Business</option>
                 <option value="Individual">Individual</option>
             </select>
