@@ -36,12 +36,12 @@ def about():
         message='Your application description page.'
     )
 
-@app.route('/individuals')
-def individuals():
+@app.route('/Individual')
+def Individual():
     """Renders the about page."""
     return render_template(
-        'individuals.html',
-        title='Individuals',
+        'Individual.html',
+        title='Individual',
         year=datetime.now().year,
         message='Your application description page.'
     )
