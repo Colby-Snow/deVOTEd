@@ -1,0 +1,40 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="container">
+        <h1>Create User</h1>
+        <br>
+        <form action="" method="post">
+            <input type="text" placeholder="Username" name="username" value="{{
+          request.form.username }}">
+            <input type="text" placeholder="Email" name="email" value="{{
+          request.form.email }}">
+            <input type="password" placeholder="Password" name="password" value="{{
+          request.form.password }}">
+            <input type="password" placeholder="Confirm Password" name="conPassword" value="{{
+          request.form.conPassword }}">
+            <select type="select" id="contact" name="contact">
+                <option value="Business">Email</option>
+                <option value="Personal">Phone</option>
+            </select>
+            <input class="btn btn-default" type="submit" value="Login">
+        </form>
+        {% if error %}
+        <p class="error">
+            <strong>Error:</strong> {{ error }}
+            {% endif %}
+    </div>
+</body>
+</html>
+
+{% endblock %}
