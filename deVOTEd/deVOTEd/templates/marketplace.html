@@ -33,6 +33,97 @@
 
     </noscript>
 </head>
+<style>
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        box-sizing: inherit;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+        .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .button:hover {
+            background-color: #555;
+        }
+    .button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #4CAF50;
+    }
+
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    .button2 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008CBA;
+    }
+
+        .button2:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+</style>
 <body class="homepage">
     <!-- Header -->
     <div id="header">
@@ -62,69 +153,162 @@
             <header>
                 <h2>Welcome to the marketplace</h2>
             </header>
-            <p>This is <strong>Linear</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
             <hr />
-            <div class="row">
-                <section class="4u">
-                    <span class="pennant"><span class="fa fa-briefcase"></span></span>
-                    <h3>Maecenas luctus lectus</h3>
-                    <p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-                    <a href="#" class="button button-style1">Read More</a>
-                </section>
-                <section class="4u">
-                    <span class="pennant"><span class="fa fa-lock"></span></span>
-                    <h3>Maecenas luctus lectus</h3>
-                    <p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec magna.</p>
-                    <a href="#" class="button button-style1">Read More</a>
-                </section>
-                <section class="4u">
-                    <span class="pennant"><span class="fa fa-globe"></span></span>
-                    <h3>Maecenas luctus lectus</h3>
-                    <p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-                    <a href="#" class="button button-style1">Read More</a>
-                </section>
-
+        </div>
+        <h2>Choose Items</h2>
+        <p>lalallala</p>
+        <br>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/b1.png" alt="LinkedIN" style="width:100%;height:400px;">
+                    <div class="container">
+                        <h2>T-Shirt</h2>
+                        <p class="title">smth</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Black T-Shirt</p>
+                        <p><a href="images/certificates/cer1.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/bottle1.png" alt="Mike" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Bag</h2>
+                        <p class="title">Lalalala</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Use variables to store, retrie</p>
+                        <p><a href="images/certificates/cer2.html" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/baby1.png" alt="John" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Lalalalal</h2>
+                        <p class="title">Lalaalalala</p>
+                        <p>fgfjjfjf</p>
+                        <p>hiiiiiiiiii</p>
+                        <p><a href="images/certificates/cer3.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Main -->
-    <div id="main">
-        <div id="content" class="container">
-
-            <div class="row">
-                <section class="6u">
-                    <a href="#" class="image full"><img src="images/pic01.jpg" alt=""></a>
-                    <header>
-                        <h2>Mauris vulputate dolor</h2>
-                    </header>
-                    <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-                </section>
-                <section class="6u">
-                    <a href="#" class="image full"><img src="images/pic02.jpg" alt=""></a>
-                    <header>
-                        <h2>Mauris vulputate dolor</h2>
-                    </header>
-                    <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-                </section>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/bl1.png" alt="LinkedIN" style="width:100%;height:400px;">
+                    <div class="container">
+                        <h2>T-Shirt</h2>
+                        <p class="title">smth</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Black T-Shirt</p>
+                        <p><a href="images/certificates/cer1.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
             </div>
-
-            <div class="row">
-                <section class="6u">
-                    <a href="#" class="image full"><img src="images/pic03.jpg" alt=""></a>
-                    <header>
-                        <h2>Mauris vulputate dolor</h2>
-                    </header>
-                    <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-                </section>
-                <section class="6u">
-                    <a href="#" class="image full"><img src="images/pic04.jpg" alt=""></a>
-                    <header>
-                        <h2>Mauris vulputate dolor</h2>
-                    </header>
-                    <p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-                </section>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/c1.png" alt="Mike" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Bag</h2>
+                        <p class="title">Lalalala</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Use variables to store,n</p>
+                        <p><a href="images/certificates/cer2.html" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
             </div>
-
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/cap1.png" alt="John" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Lalalalal</h2>
+                        <p class="title">Lalaalalala</p>
+                        <p>fgfjjfjf</p>
+                        <p>hiiiiiiiiii</p>
+                        <p><a href="images/certificates/cer3.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/hand1.png" alt="LinkedIN" style="width:100%;height:400px;">
+                    <div class="container">
+                        <h2>T-Shirt</h2>
+                        <p class="title">smth</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Black T-Shirt</p>
+                        <p><a href="images/certificates/cer1.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/m1.png" alt="Mike" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Bag</h2>
+                        <p class="title">Lalalala</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Use variables to store, retrie</p>
+                        <p><a href="images/certificates/cer2.html" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/n1.png" alt="John" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Lalalalal</h2>
+                        <p class="title">Lalaalalala</p>
+                        <p>fgfjjfjf</p>
+                        <p>hiiiiiiiiii</p>
+                        <p><a href="images/certificates/cer3.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/s1.png" alt="LinkedIN" style="width:100%;height:400px;">
+                    <div class="container">
+                        <h2>T-Shirt</h2>
+                        <p class="title">smth</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Black T-Shirt</p>
+                        <p><a href="images/certificates/cer1.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/t1.png" alt="Mike" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Bag</h2>
+                        <p class="title">Lalalala</p>
+                        <p>Available Size: S, M, L, XL, XXL</p>
+                        <p>Use variables to store, retrie</p>
+                        <p><a href="images/certificates/cer2.html" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="../static/images/MarketPlace/ts1.png" alt="John" style="width:100%; height:400px;">
+                    <div class="container">
+                        <h2>Lalalalal</h2>
+                        <p class="title">Lalaalalala</p>
+                        <p>fgfjjfjf</p>
+                        <p>hiiiiiiiiii</p>
+                        <p><a href="images/certificates/cer3.pdf" class="button" style="color:white">Show  more</a></button></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Tweet -->
