@@ -18,14 +18,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="/" class="navbar-brand">Application name</a>
+                <img src="../static/images/deVOTEdlogo.png" alt="deVOTEd" height="60" width= "150">
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                    <li><a>|</a></li>
+                    <li><a href="{{ url_for('individuals') }}">Individuals</a></li>
+                    <li><a href="{{ url_for('businesses') }}">Businesses</a></li>
+                    <li><a href="{{ url_for('marketplace') }}">Marketplace</a></li>
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
                 </ul>
