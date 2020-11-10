@@ -5,6 +5,8 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import Flask, render_template, redirect, url_for, request
 from deVOTEd import app
+from .RegistrationForm import RegistrationForm
+from .User import User
 
 @app.route('/')
 @app.route('/home')
@@ -28,12 +30,11 @@ def contact():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    form = request.form
+    form = RegistrationForm(request.form)
     if request.method == 'POST' and form.validate():
         user = User(form.username.data, form.email.data,
-                    form.password.data)
-        db_session.add(user)
-        flash('Thanks for registering')
+                    form.password.data, form.userStatus.data)
+        
         return redirect(url_for('login'))
     return render_template('register.html', form=form)
 
@@ -44,7 +45,10 @@ def login():
         if request.form['username'] != 'admin' or request.form['password'] != 'admin':
             error = 'Invalid Credentials. Please try again.'
         else:
-            return redirect(url_for('home'))
+            if request.form['userStatus'] == "Business":
+                return redirect(url_for("businesses"))
+            if request.form['userStatus'] == "Individual":
+                return redirect(url_for("individuals"))
     return render_template('login.html', error=error)
 
 @app.route('/about')
