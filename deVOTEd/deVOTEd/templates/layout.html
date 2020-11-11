@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Flask Application</title>
+    <title>{{ title }} - deVOTEd</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
@@ -23,14 +23,24 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('business') }}">Business</a></li>
                     <li><a href="{{ url_for('about') }}">About</a></li>
                     <li><a href="{{ url_for('contact') }}">Contact</a></li>
-                    <li><a href="{{ url_for('Individual') }}">Individual</a></li>
+                    {% if(session['individual_id'])%}
+                    <li><a href="{{ url_for('individuals') }}">Individual</a></li>
+                    {% endif %}
+                    {% if(session['business_id'])%}
                     <li><a href="{{ url_for('businesses') }}">Businesses</a></li>
+                    <li><a href="{{ url_for('createEvent') }}">Create Event</a></li>
+                    {% endif %}
+                    {% if(session['individual_id'] or session['business_id']) %}
+                    <li><a href="{{ url_for('events') }}">Events</a></li>
                     <li><a href="{{ url_for('marketplace') }}">Marketplace</a></li>
+                    <li><a href="{{url_for('signout')}}">Signout</a></li>
+                    <li><h4 style="color: white">Current Coins: {{session['coins']}}</h4></li>
+                    {% else %}
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </div>

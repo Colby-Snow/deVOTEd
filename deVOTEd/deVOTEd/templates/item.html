@@ -1,0 +1,51 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+
+
+
+<div class="row">
+    <div class="col-md-4">
+        {% for row in item%}
+        <h2>{{row.item_name}}</h2>
+        <img id="displayImg" src="{{row.item_imgurl}}" alt="LinkedIN" style="width:100%;height:400px;">
+        {% if row.item_altimgurl != None %}
+        <img id="altImg" src="{{row.item_altimgurl}}" alt="LinkedIN" style="width:100%;height:400px;" hidden>
+        {%endif%}
+        {% if row.item_altimgurl2 != None %}
+        <img id="altImg2" src="{{row.item_altimgurl2}}" alt="LinkedIN" style="width:100%;height:400px;" hidden>
+        {%endif%}
+        <p>
+            {{row.item_description}}
+        </p>
+        <button class="btn btn-default alt-img" onclick="showAltImg()">Alternate Color/View</button>
+        <h4>Price: {{row.item_coins}} coins</h4>
+
+        <p><a class="btn btn-default" href="/purchase/{{row.item_id}}">Purchase</a></p>
+        {%endfor%}
+    </div>
+</div>
+
+<script>
+
+    function showAltImg() {
+        if ($("#displayImg").is(":hidden") == false && $("#altImg").length) {
+            $("#altImg2").hide();
+            $("#displayImg").hide();
+            $("#altImg").show();
+        }
+        else if ($("#altImg").is(":hidden") == false && $("#altImg2").length) {
+            $("#displayImg").hide();
+            $("#altImg").hide();
+            $("#altImg2").show();
+        }
+        else {
+            $("#altImg").hide();
+            $("#altImg2").hide();
+            $("#displayImg").show();
+        }
+        
+    }
+</script>
+
+{% endblock %}
