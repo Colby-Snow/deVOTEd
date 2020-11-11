@@ -22,16 +22,6 @@ def home():
         year=datetime.now().year,
     )
 
-@app.route('/contact')
-def contact():
-    """Renders the contact page."""
-    return render_template(
-        'contact.html',
-        title='Contact',
-        year=datetime.now().year,
-        message='Your contact page.'
-    )
-
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     """Renders the register page. Recieves register page and sends to sql db"""
@@ -46,7 +36,7 @@ def register():
             error = connsql.insertIndividuals(cursor, user.username, user.password, user.email)
         if(error == None):
             return redirect(url_for('login'))
-    return render_template('register.html', form=form)
+    return render_template('register.html', form=form, title = "registration")
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -153,9 +143,9 @@ def createEvent():
     form = EventRegistrationForm(request.form)
     if request.method == 'POST' and form.validate():
         cursor = connsql.initCursor()
-        connsql.insertEvent(cursor, form.eventName.data, form.eventDescription.data, form.eventCoins.data, form.eventDate.data, session['business_id'], form.eventLength.data)
+        connsql.insertEvent(cursor, form.eventName.data, form.eventDescription.data, form.eventDate.data, session['business_id'], form.eventLength.data)
         connsql.updateCoinsBusiness(cursor)
-        return redirect(url_for('home'))
+        return redirect(url_for('events'))
     return render_template('createevents.html', form=form)
 
 @app.route('/events')

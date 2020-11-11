@@ -44,10 +44,9 @@ def insertMarketPlace(cursor, name, description, coins, imageurl, altimgurl = No
     cursor.execute("Insert INTO items(item_name,item_description,item_coins,item_imgurl, item_altimgurl, item_altimgurl2) VALUES (?,?,?,?,?,?)", name, description, coins, imageurl, altimgurl, altimgurl2)
     cursor.commit()
 
-def insertEvent(cursor, name, description, coins, date, businessId, length):
-    cursor.execute("Update Businesses Set business_coins = business_coins - ? where business_id = ?", coins, businessId)
-    calcpay = math.floor(coins/length)
-    cursor.execute("Insert INTO Events(fk_business_id, event_name, event_description, event_date, event_coins, event_length, event_calcpay) VALUES (?,?,?,?,?,?,?)", businessId, name, description, date, coins, length, calcpay)
+def insertEvent(cursor, name, description, date, businessId, length):
+    calcpay = math.floor(length * 5)
+    cursor.execute("Insert INTO Events(fk_business_id, event_name, event_description, event_date, event_coins, event_length, event_calcpay) VALUES (?,?,?,?,?,?,?)", businessId, name, description, date, 0, length, calcpay)
     cursor.commit()
     
 
@@ -86,8 +85,6 @@ def joinEvent(cursor, eventId, individualId):
     for row in cursor:
         coinsAdded = row.event_calcpay
     cursor.execute("Update Individuals Set individual_coins = individual_coins + ? where individual_id = ?", coinsAdded, individualId)
-    cursor.execute("Insert Into IndividualSignups (fk_individual_id, fk_event_id) Values (?,?)", individualId,eventId)
-    cursor.execute("Update Events Set event_coins = event_coins - ? where event_id = ?", coinsAdded, eventId)
     cursor.commit()
 
 def purchaseIndiv(cursor, itemId, individualId):
