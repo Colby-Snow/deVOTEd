@@ -62,7 +62,7 @@ def login():
                     return redirect(url_for("individuals"))
             else:
                 error = 'Invalid Credentials. Please try again.'
-    return render_template('login.html', error=error)
+    return render_template('login.html', error=error, title = "Login")
 
 @app.route('/about')
 def about():
@@ -146,7 +146,7 @@ def createEvent():
         connsql.insertEvent(cursor, form.eventName.data, form.eventDescription.data, form.eventDate.data, session['business_id'], form.eventLength.data)
         connsql.updateCoinsBusiness(cursor)
         return redirect(url_for('events'))
-    return render_template('createevents.html', form=form)
+    return render_template('createevents.html', form=form, title = "Create Events")
 
 @app.route('/events')
 def events():
