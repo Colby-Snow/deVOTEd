@@ -9,7 +9,7 @@
         <th>Event Description</th>
         <th>Date of event</th>
         <th>Number of Hours</th>
-        <th>Coins</th>
+        <th>Coins for participation!</th>
     </tr>
     {% for event in events %}
     <tr>
@@ -17,7 +17,7 @@
         <td>{{event.event_description}}</td>
         <td>{{event.event_date}}</td>
         <td>{{event.event_length}}</td>
-        <td>{{event.event_coins}}</td>
+        <td>{{event.event_calcpay}}</td>
         {% if(session['individual_id'])%}
         <td><a href="/joinEvents/{{event.event_id}}">Join event!</a>
         {% endif %}
