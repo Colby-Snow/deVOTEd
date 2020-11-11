@@ -142,7 +142,7 @@ def purchase(itemid):
         connsql.purchaseIndiv(cursor, itemid, session['individual_id'])
         connsql.updateCoinsIndividual(cursor)
     else:
-        connsql.purchaseBus(cursor, itemid, session['individual_id'])
+        connsql.purchaseBus(cursor, itemid, session['business_id'])
         connsql.updateCoinsBusiness(cursor)
     return redirect(url_for('marketplace'))
 
