@@ -1,14 +1,41 @@
 ﻿{% extends "layout.html" %}
 
 {% block content %}
+<style>
+    .lead {
+        text-align: center;
+    }
 
+    .bus1text {
+        font-size: small;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding-left: 10px;
+        background-color: rgba(85, 76, 85, 0.20);
+        border: 1px black;
+        width: 55%;
+        float: right;
+        height: 250px;
+    }
+
+    .bus1img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        width: 40%;
+        float: left;
+        height: 250px;
+    }
+</style>
 <div class="jumbotron">
     <img src="../static/images/business2.jpg" alt="Two boys talking" height="200" width="300">
     <img src="../static/images/hands.jpg" alt="hands" height="200" width="350">
     <img src="../static/images/business3.jpg" alt="two people volunteering" height="200" width="350">
     <p></p>
     <p></p>
-    <p class="lead">&nbsp&nbsp&nbsp&nbsp&nbsp Businesses</p>
+    <p class="lead"><b>Businesses</b></p>
 
     <p>
         Join DeVoted's mission and cause to increase local awareness
@@ -22,37 +49,60 @@
     </p>
 </div>
 
-<p>
-    Are you a business looking for a great way to improve your company's reputation and impact on the community? If so, you can start here! Bring your team in for meaningful experience.
-    We work with many local companies and communities in order to host events.
-</p>
-
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            It's easy! All you have to do is sign up for future events. Create a username and password, and search for local projects.
-            If you want to volunteer by yourself, perhaps enjoy the solitude of nature. Or volunteer on a team, where you can develop friendships,
-            and cultivate connections.
-        </p>
-        <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+<div id="Bus1">
+    <div class="bus1text">
+        <h4>
+            <b>
+                &nbsp&nbsp&nbsp&nbsp&nbspDid you know that company sponsored volunteering is good for &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspYour business?
+            </b>
+        </h4>
+        <h5><b>Here is why:</b></h5>
+        <ul>
+            <li>Make A Positive Impact On Your Community</li>
+            <li>Encourage Team Building</li>
+            <li>Promote Your Business!</li>
+            <li>Attract Quality Job Candidates</li>
+            <li>Improve your bottom line and enhance your corporate image</li>
+            <li>Do good in the world and help make a difference.</li>
+        </ul>
     </div>
-    <div class="col-md-4">
-        <h2>Get some coin!</h2>
-        <p>
-            Here at deVOTEd we like the idea of rewarding those will helpful hands. Whenever a volunteer participates in an event, they get to accrue
-            coin, which is our currency that allows people to make purchases in the marketplace.
-        </p>
-        <p><a href="{{url_for('createEvent')}}" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>View our marketplace!</h2>
-        <p>
-            Our marketplace is a spot to buy sway! Once you accumulate coin you make purchases from our online store, ranging from tedding bears,
-            to blankets, sweatshirts, etc.
-        </p>
-        <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <div class="bus1img">
+        <img src="../static/images/busimg.png." alt="Volunteeri">
     </div>
 </div>
+<p></p>
+<p></p>
+<h5><b>
+        Are you a business looking for a great way to improve your company's reputation and impact on the community? If so, you can start here! Bring your team in for meaningful experience.
+        We work with many local companies and communities in order to host events.
+</h5></b>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Getting started</h2>
+                <p>
+                    It's easy! All you have to do is sign up for future events. Create a username and password, and search for local projects.
+                    If you want to volunteer by yourself, perhaps enjoy the solitude of nature. Or volunteer on a team, where you can develop friendships,
+                    and cultivate connections.
+                </p>
+                <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Get some coin!</h2>
+                <p>
+                    Here at deVOTEd we like the idea of rewarding those will helpful hands. Whenever a volunteer participates in an event, they get to accrue
+                    coin, which is our currency that allows people to make purchases in the marketplace.
+                </p>
+                <p><a href="{{url_for('createEvent')}}" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>View our marketplace!</h2>
+                <p>
+                    Our marketplace is a spot to buy sway! Once you accumulate coin you make purchases from our online store, ranging from tedding bears,
+                    to blankets, sweatshirts, etc.
+                </p>
+                <p><a href="http://flask.pocoo.org/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+            </div>
+        </div>
 
-{% endblock %}
+        {% endblock %}
