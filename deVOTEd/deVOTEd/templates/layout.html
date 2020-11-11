@@ -35,7 +35,7 @@
                     <li><a href="{{ url_for('events') }}">Events</a></li>
                     <li><a href="{{ url_for('marketplace') }}">Marketplace</a></li>
                     <li><a href="{{url_for('signout')}}">Signout</a></li>
-                    <li><h4 style="color: white">Current Coins: {{session['coins']}}</h4></li>
+                    <li><h4 style="color: white">&nbsp&nbsp&nbsp&nbspCurrent Coins: {{session['coins']}}</h4></li>
                     {% else %}
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('register') }}">Register</a></li>
