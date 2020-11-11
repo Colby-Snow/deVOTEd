@@ -1,0 +1,69 @@
+Name,		Description,		Coin
+Draw-string bag,
+Perfect Size: 16.5 inches long and 13.4inches wide,ldeal for storing books, sneakers,clothes,snacks,all kinds of daily necessities,
+10,
+../static/images/MarketPlace/b1.png,
+
+Watter Bottle,
+This Stainless Steel Water Bottle with double-walled vacuum insulation. Non-toxic BPA-free functional. It can keep beverages cold for 8 hours, and hot for 8 hours.,
+17,
+../static/images/MarketPlace/bottle1.png,
+../static/images/MarketPlace/bottle2.png
+
+Toddler Bodysuit,
+Featuring a layered design with abdominal access, this Devoted's bodysuit delivers the function you need to keep your toddler comfortable.,
+15,
+../static/images/MarketPlace/baby1.png,
+../static/images/MarketPlace/baby2.png
+
+Fleece Blanket,
+Supersoft Fleece Polyester Twin Blanket, Cotton Blend, Machine washable for easy care,
+25,
+../static/images/MarketPlace/bl1.png,
+../static/images/MarketPlace/bl2.png,
+../static/images/MarketPlace/bl3.png
+
+Devoted's Cup,
+Microwave safe. 100% pure white ceramic with money back guarantee, great for coffee addicts who will appreciate for years. For coworker or friend. This is the perfect to use every day, in the office.
+7,
+../static/images/MarketPlace/c1.png
+
+Universal Cap,
+87% Polyester, 13% Spandex, UPF 50 sun protection to guard against the sun's most harmful rays,
+10,
+../static/images/MarketPlace/cap1.png,
+../static/images/MarketPlace/cap2.png
+
+Cute Hand Sanitizer Holder,
+1oz capacity, mini size, very convenient to carry at any time. The product comes with a hook, which can be hung on school bags, keychains, purse, backpacks, gym bags, diaper etc.,
+8,
+../static/images/MarketPlace/hand1.png
+
+Reusable Face Masks,
+Made of lightweight, skin-friendly cotton, very soft, durable and breathable. Unisex black, stylish design. It protects you while making you look very stylish and beautiful.,
+5,
+../static/images/MarketPlace/m1.png,
+../static/images/MarketPlace/m2.png,
+../static/images/MarketPlace/m3.png
+
+Devoted's 2021 Planner,
+The Devoted 2021 Planner's method is structured to help you begin with the end in mind, starting from your dreams & long term goals, & chunking them down to actionable steps in your monthly, weekly & daily planning,
+17,
+../static/images/MarketPlace/n1.png
+
+Navy Sweatshirt Hoodie,
+Heavyweight and durable fleece made with cotton-polyester blend. Our heaviest, warmest fleece is ideal for keeping out the cold,
+25,
+../static/images/MarketPlace/s1.png
+
+Devoted's Teddy Bear,
+Classically cute 11.5" tall light brown plush toy stuffed animal teddy bear with soft variegated fur, surface washable,
+25,
+../static/images/MarketPlace/t1.png
+
+Devoted's Universal T-Shirt,
+Pre-washed for peak softness and locked in color-retention. Machine washable.Model is 5'8" and wearing a Medium.,
+15,
+../static/images/MarketPlace/ts1.png,
+../static/images/MarketPlace/ts2.png
+
