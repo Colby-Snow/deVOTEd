@@ -1,0 +1,56 @@
+Bios
+
+Heather-
+My name is Heather Whittlesey. My background is in Fine Art. I have a an MFA in Integrated Visual Studies. 
+I used to be a glassblower and a ceramics teacher. I made the transition to IT from an interactive art class
+that showed us programming. I also worked in the finance industry investigating financial crimes on credit cards.
+I ultimately made the decision to transition to IT because our interaction with it becomes exponentially more each year 
+and I want to be apart of the movement.
+
+Brittney-
+My name is Brittney Harned. My background consists of three coding classes in high school as well as a few hobby website
+work. I created a website for my high school agriculture club which is what made me want to continue learning to program.
+Programming is what I want to do because growing up I have had access to technology at my fingertips, and learning more
+about how programming works is a passion of mine. I was greatly influenced by family members and my high school business
+technology teacher to being programming.
+
+Melanie-
+My name is Melanie Suzette Alvarado and I'm a first generation Latina student. Although I was born here in the United States
+I am able to speak both Spanish and English fluently because of my parents. I have always been interested in Computer Science
+but it wasn't until my Junior year of Highschool when I attended a Women's STEM Conference in Chicago, IL that I decided to
+pursue this career. This event had multiple and different workshops and I choose to attend a developing based workshop. I
+attended that workshop and I really enjoyed the workshop and decided that instead of becoming a math teacher I would become a
+developer and here I am and I don't regret it.
+
+Yulduz-
+I am an international student from Turkmenistan. From a young age, I was absolutely attracted by computer games and the world
+of technology, but I never thought of developing it as my career. Undecided about what I want to do in the future, I came to
+the US to pursue my Associates of Arts Degree. When the pandemic took over, I started dabbling with programming and taking
+some online courses and soon realized I wanted it to be my career. I was really attracted by the challenge and the intellectual
+stimulation that programming provides. During the ByteJam,  I incredibly enjoyed working with a great team by sharing and
+discovering new things about the programming world. 
+
+Travis-
+I joined the Software Development course early 2020 to try and find a course in life. So far it has been pretty fun learning a
+field that I thought would be impossible for me. It is a great experience working with my team on this project for the end product
+we created. Though I am still very much entry level in terms of knowledge, I was glad I could put pieces together on my own.
+
+Douglas-
+I am Douglas J Wilcox, II. I read my first Harry Potter Book when I was 6 years old and have been reading, on average 4-6 200+ page
+books per week since then. I have struggled with severe ADHD most of my life, and it has never been easy for me to make new friends,
+because I am not generally interested in things that most people my age are interested in. Last year, I took a series of complex tests,
+which ended up revealing that my difficulty trying to manage college and make new friends was due to me being on the Autism Spectrum,
+level 2 ASD, is my diagnosis - but a few years ago, they would have called it Aspergers. The most interesting result from these tests
+was that my visual spacial skills are off the charts.  What this boils down to, is that my ADHD, and Autism, I need help remembering
+to follow through, and need to be strongly encouraged to socialize. However, my advanced visual spacial skills give me a leading edge
+on identifying bugs in code, items out of place, and I mostly think and work outside the box. I have rightfully earned the nickname my
+8th grade science teacher gave me, The Nutty Professor.
+
+Tyler-
+I have been interested in computers and technology ever since I was a child. I knew right away that I wanted to be in a software
+development program right after high school. Still being a beginner in the software development program I am glad I was able to contribute
+on this project. I have never done anything like this and it was a great experience working with my group on this project.
+
+Colby-
+
+
