@@ -1,14 +1,37 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<style>
+    .vol1text {
+        font-size: small;
+        border-radius: 8px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        padding-left: 10px;
+        background-color: rgba(85, 76, 85, 0.20);
+        border: 1px black;
+        width: 55%;
+        float: right;
+        height: 250px;
+    }
 
+    .vol1img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 40%;
+        float: left;
+        height: 250px;
+    }
+</style>
 <div class="jumbotron">
     <img src="../static/images/KidsAndFood2.jpg" alt="Kids with Food" height="200" width="350">
     <img src="../static/images/ManHelpingBoy.webp" alt="Man helping Boy" height="200" width="300">
     <img src="../static/images/Nature.jpg" alt="Nature Volunteering" height="200" width="350">
     <p></p>
     <p></p>
-    <p class="lead">&nbsp&nbsp&nbsp&nbsp&nbsp Are you looking for an opportunity to pay it forward?</p>
+    <p class="lead"><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Are you looking for an opportunity to pay it forward?</b></p>
 
     <p>
         Join DeVoted's mission and cause to increase local awareness
@@ -20,6 +43,10 @@
         the enviroment that we all live in. There is so much individuals as well as businesses can do to donate
         their time and energy for a cause that hits home and complements our identities as human beings.
     </p>
+    <audio controls>
+        <source src="../static/audio/Home.mp3" />
+    </audio>
+    <p>Spanish Translation</p>
     <br>
     <img src="../static/images/mealsoftheheartland.jpg" alt="Meals of the heartland logo" height="75" width="75">
     <img src="../static/images/arl.jpg" alt="arl logo" height="75" width="75">
@@ -28,12 +55,32 @@
     <img src="../static/images/sc.jpg" alt="second chance logo" height="75" width="75">
     <img src="../static/images/senior.jpg" alt="senior citizen logo" height="75" width="75">
     <img src="../static/images/care.png" alt="iowa care logo" height="75" width="75">
-    <img src="../static/images/hab.png" alt="habitat logo" height="75" width="150">
+    <img src="../static/images/hab.png" alt="habitat logo" height="75" width="75">
+    <img src="../static/images/dnr.jpg" alt="DNR logo" height="75" width="75">
 </div>
 
-<p> Are you a business looking for a great way to improve your company's reputation and impact on the community? If so, you can start here! Bring your team in for meaningful experience.  
-    We work with many local companies and communities in order to host events.</p>
-
+<div id="Volunteer1">
+     <div class="vol1text">
+         <h2><b>Why You Should Volunteer?</b></h2>
+         <ul>
+            <li>Meet new people and develop lasting relationships.</li>
+            <li>Increase your happiness and better your mental health.</li>
+            <li>Learn new skills and increase your brain function and self-esteem.</li>
+            <li>Stand out on job applications and further your career.</li>
+            <li>Decrease your stress and accrue the health benefits.</li>
+            <li>Do good in the world and help make a difference.</li>
+            </ul>
+     </div>
+     <div class="vol1img">
+         <img src="../static/images/icon2.png." alt="Volunteeri">
+     </div>
+</div>
+<p></p>
+<p></p>
+<h3><b>
+    &nbsp&nbsp&nbsp&nbspAre you a business looking for a great way to improve your company's reputation and impact on the community? If so, you can start here! Bring your team in for meaningful experience.
+    We work with many local companies and communities in order to host events.
+</h3></b>
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>
