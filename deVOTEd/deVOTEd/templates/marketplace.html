@@ -123,28 +123,22 @@
             background-color: #008CBA;
             color: white;
         }
+    h2 {
+        padding-left: 20px;
+    }
 </style>
 <body class="homepage">
-        <div class="container">
-
-            <!-- Logo -->
-            <div id="logo">
-                <h1><a href="#">Marketplace</a></h1>
-                <!--<span class="tag">By TEMPLATED</span>-->
-            </div>
-        </div>
-    </div>
     <!-- Featured -->
         <div id="featured">
             <div class="container">
                 <header>
-                    <h2>Welcome to the marketplace</h2>
+                    <h2>Welcome to the Marketplace</h2>
                 </header>
                 <hr />
+                <h2>Choose Items</h2>
+                <br />
             </div>
-            <h2>Choose Items</h2>
-            <p>lalallala</p>
-            <br />
+            
             <div class="row">
                 {%for row in items%}
 
@@ -164,31 +158,7 @@
             {%endif%}
             {%endfor%}
         </div>
-            <!-- Tweet -->
-            <div id="tweet">
-                <div class="container">
-                    <section>
-                        <blockquote>&ldquo;In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat.&rdquo;</blockquote>
-                    </section>
-                </div>
-            </div>
-            <!-- Footer -->
-            <div id="footer">
-                <div class="container">
-                    <section>
-                        <header>
-                            <h2>Get in touch</h2>
-                            <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
-                        </header>
-                        <ul class="contact">
-                            <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-                            <li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
-                            <li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
-                            <li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
+        
             <!-- Copyright -->
             <!--<div id="copyright">
         <div class="container">
