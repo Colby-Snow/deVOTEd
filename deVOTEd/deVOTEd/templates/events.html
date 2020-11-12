@@ -1,7 +1,26 @@
 ﻿{% extends "layout.html" %}
 
 {% block content %}
-<h2>Upcoming Events!</h2>
+<h2>Upcoming Events</h2>
+
+
+<style>
+    table {
+        padding:30px;
+    }
+
+    tr {
+        padding: 30px;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+</style>
+
+
 
 <table>
     <tr>
@@ -19,8 +38,9 @@
         <td>{{event.event_length}}</td>
         <td>{{event.event_calcpay}}</td>
         {% if(session['individual_id'])%}
-        <td><a href="/joinEvents/{{event.event_id}}">Join event!</a>
-        {% endif %}
+        <td>
+            <a href="/joinEvents/{{event.event_id}}">Join event!</a>
+            {% endif %}
     </tr>
     {% endfor %}
 </table>
